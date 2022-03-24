@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<style>
+    .container {
+        background-color: #cff0c1;
+        margin: 8% 36% 1% 37%;
+        padding: 20px 40px 20px 40px;
+        font-size: 18px;
+        border-radius: 50px 20px;
+        font-family: 'Mulish', sans-serif;
+    }
+    
+    caption {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 65px;
+        font-family: 'Tangerine', cursive;
+        padding-bottom: 20px;
+        text-shadow: 3px 3px 5px #306719;
+        text-align: center;
+    }
+    
+    input {
+        padding: 5px 0px 5px 15px;
+        font-size: 15px;
+    }
+    
+    button {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 50px 8px 50px;
+        margin: 25px 0px 25px 30%;
+        background-color: #18434c;
+        color: white;
+        border-color: black;
+        border-width: 3px;
+
+    }
+    
+    a {
+        text-decoration: none;
+        color: #e4e6e7;
+        padding: 0px 60px;
+        border-right: solid #e4e6e7 2px;
+        font-family: 'Share Tech Mono', monospace;
+        font-size:25px;
+    }
+    
+    .navigator {
+        position: fixed;
+        bottom: 20px;
+        right: 10%;
+        left: 10%;
+        background-color: #353739;   
+        padding: 15px 0px;
+        box-shadow: 5px 5px 7px black;
+    }
+    
+</style>
+
+
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Lobster&family=Tangerine:wght@700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <script>
+            function validation()
+            {
+                var name = document.getElementById('name');
+                var phone_num = document.getElementById('ph_no');
+                var email_id = document.getElementById('email_id');
+                var count = document.getElementById('count');
+                var pwd = document.getElementById('pwd');
+                var confirm_pwd = document.getElementById('confirm_pwd');
+                var letters = /^[A-Za-z]+$/;
+                /*document.write(name.value);
+                document.write(phone_num.value);
+                document.write(email_id.value);
+                document.write(age.value);
+                document.write(pwd.value);
+                document.write(confirm_pwd.value);
+                 */
+                
+                //validation for name
+                if(name.value.match(letters) == null)
+                {
+                    alert('Please enter appropiate name (characters only).');
+                    name.value = '';
+                    name.focus();
+                    return false;
+                }
+                
+                //validation for phone number
+                if( isNaN(phone_num.value) || phone_num.value.length != 10 )
+                {
+                    alert('Please enter numeric 10 digits only.');
+                    phone_num.value = '';
+                    phone_num.focus();
+                    return false;
+                }
+                
+                //validation for email id
+                if(email_id.value.match('@') == null || email_id.value.match('.com') == null)
+                {
+                    alert('Please enter appropiate email id.');
+                    email_id.value = '';
+                    email_id.focus();
+                    return false;
+                }
+                
+                //validation for count
+                if(isNaN(count.value) || count.value < 4)
+                {
+                    alert('Minimum 5 count of people is required for a reservation.');
+                    count.value = '';
+                    count.focus();
+                    return false;
+                }
+                
+                //validation for password
+                if(pwd.value.length < 6)
+                {
+                    alert('Password should have atleast 6 characters.');
+                    pwd.value = '';
+                    pwd.focus();
+                    return false;
+                }
+                
+                //validation for confirm password
+                if(pwd.value != confirm_pwd.value)
+                {
+                    alert('Confirmed password is incorrect.');
+                    confirm_pwd.value = '';
+                    confirm_pwd.focus();
+                    return false;
+                }
+            }
+            
+        </script>
+    </head>
+    <body bgcolor='#b5e7a0'>
+        <div class="container">
+            <form onsubmit='return validation()' action="reservation_form.html">
+                <table cellspacing='15px' border='0'>
+                    <caption>Reservation</caption>
+                    <tr>
+                        <td>
+                            <label>Name: </label>
+                        </td>
+                        <td>
+                            <input type='text' id='name' >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone Number: </label>
+                        </td>
+                        <td>
+                            <input type='text' id='ph_no' >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email Id: </label>
+                        </td>
+                        <td>
+                            <input type='text' id='email_id' placeholder='abc@gmail.com' >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Number of People: </label>
+                        </td>
+                        <td>
+                            <input type='text' id='count' >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password: </label>
+                        </td>
+                        <td>
+                            <input type='password' id='pwd' >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Confirm Password: </label>
+                        </td>
+                        <td>
+                            <input type='password' id='confirm_pwd' >
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" >SUBMIT</button>
+            </form>
+        </div>   
+        <div class="navigator">
+            <table  align="center">
+                <tr align="center">
+                    <td><a style="border-left: solid #e4e6e7 2px;" href="../home.html">Home</a></td>
+                    <td><a href="../menu/menu.html">Menu</a></td>
+                    <td><a href="../cafe/cafe.html">Cafe</a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

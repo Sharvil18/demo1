@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<style>
+    .header_img {
+        float:left;
+        position: relative; 
+        left: 18%;
+    }
+    
+    .header_title {
+        position: relative;
+        top: 108px;
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 5px 5px 7px #f9e406;
+    }
+    
+    .menu_title {
+        font-family: 'Audiowide', cursive;
+        font-size: 45px;
+        padding: 30px 0px;
+    }
+    
+    .section {
+        font-family: 'Montagu Slab', serif;
+        font-size:22px;
+        border-radius: 50px 20px;
+        background-color: #fdf9ce;
+        margin: 0px 580px 0px 580px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    marquee {
+        padding: 10px 0px;
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 30px;
+        background-color: #227377;
+        color: white;
+    }
+    
+    .img_map {
+        display: block;
+        margin: 50px auto; 
+    }
+    
+    .img_map_p {
+        font-family: 'Montagu Slab', serif;
+        font-size: 23px;
+    }
+    
+    .navigator {
+        position: fixed;
+        bottom: 20px;
+        right: 10%;
+        left: 10%;
+        background-color: #353739;   
+        padding: 15px 0px;
+        box-shadow: 5px 5px 7px black;
+    }
+    
+    .navigator_link {
+        text-decoration: none;
+        color: #e4e6e7;
+        padding: 0px 60px;
+        border-right: solid #e4e6e7 2px;
+        font-family: 'Share Tech Mono', monospace;
+        font-size:25px;
+    }
+</style>
+
+<html>
+    <head>
+        <title>Cafe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Montagu+Slab:wght@100;400&family=Share+Tech+Mono&family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+        
+        <script>
+            
+            function bun(x)
+            {
+                var res = confirm('You clicked on bun. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/bun.html';
+                }
+            }
+            
+            function sauce_top(x)
+            {
+                var res = confirm('You clicked on sauce. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/sauce_top.html';
+                }
+            }
+            
+            function mushroom(x)
+            {
+                var res = confirm('You clicked on mushroom. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/mushroom.html';
+                }
+            }
+            
+            function lettuce(x)
+            {
+                var res = confirm('You clicked on lettuce. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/lettuce.html';
+                }
+            }
+            
+            function bacon(x)
+            {
+                var res = confirm('You clicked on bacon. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/bacon.html';
+                }
+            }
+            
+            function cheese(x)
+            {
+                var res = confirm('You clicked on cheese. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/cheese.html';
+                }
+            }
+            
+            function patty(x)
+            {
+                var res = confirm('You clicked on patty. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/patty.html';
+                }
+            }
+            
+            function sauce_bottom(x)
+            {
+                var res = confirm('You clicked on sauce. Do you want to continue?');
+                if (res == true)
+                {
+                    x.href = 'burger_img_map/sauce_bottom.html';
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body onload="alert('Welcome to The Bombay Bistro!')" bgcolor="#fbf39d">
+    <div>
+        <img src="logo_transparent.png" alt="Logo" height="280px" class="header_img">
+        <h1 class="header_title">Welcome to Bombay Bistro</h1>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <a href='#burger'><marquee scrollamount='15'>Try our new special burger! (Click Here)</marquee></a>
+    <br><br><br>
+    <hr color="#27868b">
+    <br><br><br><br><br><br>
+    <div>
+        <table align="center">
+            <tr align="center">
+                <td><img src="starter.jpg" alt="starter" width="300px"></td>
+            </tr>
+            <tr align="center">
+                <td class="menu_title">Starters</td>
+            </tr>
+        </table>
+        <div class="section">
+            <table align='center'>
+                <tr>
+                    <td style="position:relative;right: 40%;padding-bottom: 20px;padding-top: 20px">Soup of the day</td>
+                    <td style='position: relative;left: 40%'>Rs. 330</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 40%;padding-bottom: 20px;">Garlic Bread</td>
+                    <td style='position: relative;left: 40%'>Rs. 190</td>
+                </tr>
+                 <tr>
+                    <td style="position:relative;right: 40%;padding-bottom: 20px;">Prawn Popcorn</td>
+                    <td style='position: relative;left: 40%'>Rs. 270</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 40%;padding-bottom: 20px;">Bruschetta</td>
+                    <td style='position: relative;left: 40%'>Rs. 300</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 40%;padding-bottom: 20px;padding-bottom: 20px">Ceasar Salad</td>
+                    <td style='position: relative;left: 40%'>Rs. 250</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><hr color="#27868b" width='65%'><br><br><br><br><br><br>
+    
+    <div>
+        <table align="center">
+            <tr align="center">
+                <td><img src="coffee.png" alt="Coffee" width="300px"></td>
+            </tr>
+            <tr align="center">
+                <td class="menu_title">Coffee</td>
+            </tr>
+        </table>
+        <div class="section">
+            <table align='center'>
+                <tr>
+                    <td style="position:relative;right: 55%;padding-bottom: 20px;padding-top: 20px">Americano</td>
+                    <td style='position: relative;left: 55%'>Rs. 190</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 55%;padding-bottom: 20px;">Expresso</td>
+                    <td style='position: relative;left: 55%'>Rs. 170</td>
+                </tr>
+                 <tr>
+                    <td style="position:relative;right: 55%;padding-bottom: 20px;">Cappuccino</td>
+                    <td style='position: relative;left: 55%'>Rs.200</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 55%;padding-bottom: 20px;">Latte</td>
+                    <td style='position: relative;left: 55%'>Rs. 160</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 55%;padding-bottom: 20px;padding-bottom: 20px">Mocha</td>
+                    <td style='position: relative;left: 55%'>Rs. 180</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><hr color="#27868b" width='65%'><br><br><br><br><br><br>
+    
+    <div>
+        <table align="center">
+            <tr align="center">
+                <td><img src="pasta.png" alt="pasta" width="300px"></td>
+            </tr>
+            <tr align="center">
+                <td class="menu_title">Pasta</td>
+            </tr>
+        </table>
+        <div class="section">
+            <table align='center'>
+                <tr>
+                    <td style="position:relative;right: 35%;padding-bottom: 20px;padding-top: 20px">Alfredo Pasta</td>
+                    <td style='position: relative;left: 35%'>Rs. 200</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 35%;padding-bottom: 20px;">Pasta Arrabiata</td>
+                    <td style='position: relative;left: 35%'>Rs. 240</td>
+                </tr>
+                 <tr>
+                    <td style="position:relative;right: 35%;padding-bottom: 20px;">Basil Pesto Pasta</td>
+                    <td style='position: relative;left: 35%'>Rs. 220</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 35%;padding-bottom: 20px;">Bolognese</td>
+                    <td style='position: relative;left: 35%'>Rs. 250</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 35%;padding-bottom: 20px;padding-bottom: 20px">Spaghetti</td>
+                    <td style='position: relative;left: 35%'>Rs. 260</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><hr color="#27868b" width='65%'><br><br><br><br><br><br>
+    
+    <div>
+        <table align="center">
+            <tr align="center">
+                <td><img src="pizza.png" alt="Pizza" width="300px"></td>
+            </tr>
+            <tr align="center">
+                <td class="menu_title">Pizza</td>
+            </tr>
+        </table>
+        <div class="section">
+            <table align='center'>
+                <tr>
+                    <td style="position:relative;right: 50%;padding-bottom: 20px;padding-top: 20px">Margherita</td>
+                    <td style='position: relative;left: 50%'>Rs. 500</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 50%;padding-bottom: 20px;">Marinara</td>
+                    <td style='position: relative;left: 50%'>Rs. 540</td>
+                </tr>
+                 <tr>
+                    <td style="position:relative;right: 50%;padding-bottom: 20px;">Diabola</td>
+                    <td style='position: relative;left: 50%'>Rs. 550</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 50%;padding-bottom: 20px;">Pepperoni</td>
+                    <td style='position: relative;left: 50%'>Rs. 530</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 50%;padding-bottom: 20px;padding-bottom: 20px">Capriciosa</td>
+                    <td style='position: relative;left: 50%'>Rs. 520</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><hr color="#27868b" width='65%'><br><br><br><br><br><br>
+    
+    <div>
+        <table align="center">
+            <tr align="center">
+                <td><img src="dessert.jpg" alt="Dessert" width="300px"></td>
+            </tr>
+            <tr align="center">
+                <td class="menu_title">Dessert</td>
+            </tr>
+        </table>
+        <div class="section">
+            <table align='center'>
+                <tr>
+                    <td style="position:relative;right: 20%;padding-bottom: 20px;padding-top: 20px">Chocolate Fudge</td>
+                    <td style='position: relative;left: 20%'>Rs. 200</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 20%;padding-bottom: 20px;">Cheese Cake</td>
+                    <td style='position: relative;left: 20%'>Rs. 190</td>
+                </tr>
+                 <tr>
+                    <td style="position:relative;right: 20%;padding-bottom: 20px;">Strawberry Short Cake</td>
+                    <td style='position: relative;left: 20%'>Rs. 220</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 20%;padding-bottom: 20px;">Croissaint</td>
+                    <td style='position: relative;left: 20%'>Rs. 170</td>
+                </tr>
+                <tr>
+                    <td style="position:relative;right: 20%;padding-bottom: 20px;padding-bottom: 20px">Cupcake</td>
+                    <td style='position: relative;left: 20%'>Rs. 180</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><hr color="#27868b" width='65%'><br><br><br><br>
+    
+    <div id='burger'>
+        <p class="menu_title" align="center">Burger</p>
+        <p class="img_map_p" align='center'>Click on the ingredients to know the secret!</p>
+        <img class="img_map" src="burger_img_map/burger_img_map.jpg" alt="Burger" usemap="#burger">
+        <map name="burger">
+            <area shape="rectangle" coords='538,140,180,52' onclick="bun(this)">
+            <area shape='rectangle' coords='200,150,525,230' onclick="sauce_top(this)">
+            <area shape='rectangle' coords='200,250,525,330' onclick="mushroom(this)">
+            <area shape='rectangle' coords='180,340,525,405' onclick="lettuce(this)">
+            <area shape='rectangle' coords='180,425,525,490' onclick="bacon(this)">
+            <area shape='rectangle' coords='180,510,525,600' onclick="cheese(this)">
+            <area shape='rectangle' coords='180,620,525,700' onclick="patty(this)">
+            <area shape='rectangle' coords='180,730,525,790' onclick="sauce_bottom(this)">
+            <area shape="rectangle" coords='180,800,525,850' onclick="bun(this)">
+            
+            
+        </map>
+    </div>
+    <br><br><br><br><hr color="#27868b" width='65%'><br><br><br><br><br><br>
+    
+    <div class="navigator">
+            <table  align="center">
+                <tr align="center">
+                    <td><a style="border-left: solid #e4e6e7 2px;" class="navigator_link" href="../home.html">Home</a></td>
+                    <td><a href="../menu/menu.html" class="navigator_link">Menu</a></td>
+                    <td><a href="../reservation/reservation.html" class="navigator_link">Reservation</a></td>
+                </tr>
+            </table>
+        </div>
+    
+    </body>
+</html>
